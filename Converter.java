@@ -2,8 +2,13 @@ import java.util.Scanner;
 
 
 public class Converter {
+	
 
 	public static void main(String[] args) {
+		
+		
+		
+		
 		//Initialized the values for calculations
 		int menuSelection = 0;
 		
@@ -25,24 +30,21 @@ public class Converter {
 				System.out.println("Cups to Teaspoons");
 				System.out.println("How many cups?");
 				conversionUnit = userInput.nextDouble();
-				conversionUnit *= 48;
-				System.out.println("Teaspoons = "+ conversionUnit + "\n" );
+				System.out.println("Teaspoons = "+ Calculations.cupToTeaSpoons(conversionUnit) + "\n" );
 				break;
 			
 			case 2: 
 				System.out.println("Miles to Kilometers");
 				System.out.println("How many Miles?");
 				conversionUnit = userInput.nextDouble();
-				conversionUnit *= 1.60934;
-				System.out.println("Kilometers = " + conversionUnit + "\n");
+				System.out.println("Kilometers = " + Calculations.milesToKilo(conversionUnit) + "\n");
 				break;
 			
 			case 3: 
 				System.out.println("US Gallons to Imperial Gallons");
 				System.out.println("How many gallons?");
 				conversionUnit = userInput.nextDouble();
-				conversionUnit /= 1.201;
-				System.out.println("Imperial Gallons = " + conversionUnit + "\n");
+				System.out.println("Imperial Gallons = " + Calculations.usGallonsToImperialGallons(conversionUnit) + "\n");
 				break;
 				
 			case 4: 
